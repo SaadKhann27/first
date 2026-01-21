@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Dine</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="logo.png" alt="Restaurant Logo">
+      </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#book">Book Table</a>
+        <a href="#contact">Contact</a>
+        <a href="delivery.html" target="_blank">Home Delivery</a> <!-- Added Home Delivery in header -->
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="banner" id="home">
+    <div class="banner-content">
+      <div class="banner-text">
+        <h1>Enjoy Our Delicious Meal</h1>
+        <p>Experience flavors like never before. Fresh ingredients, master chefs, and a cozy ambiance await you.</p>
+        <p>Book a table now and make your dining memorable!</p>
+        <a href="#book" class="btn">Book a Table</a>
+      </div>
+      <div class="banner-image">
+        <div class="plate-wrapper">
+          <img src="plate.png" alt="Plate of food" class="rotating">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="features">
+    <div class="container feature-cards">
+      <div class="card">
+        <div class="card-icon">👨‍🍳</div>
+        <h3>Master Chefs</h3>
+        <p>Our chefs craft every dish with passion and precision.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🍲</div>
+        <h3>Quality Food</h3>
+        <p>Fresh, high-quality ingredients make all the difference.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛵</div>
+        <h3>Online Order</h3>
+        <p>Order your favorite meals conveniently from home.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⏰</div>
+        <h3>24/7 Service</h3>
+        <p>We are available anytime to satisfy your cravings.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="welcome">
+    <div class="container welcome-flex">
+      <div class="welcome-text">
+        <h2>Welcome to Our Velvet Dine</h2>
+        <p>Velvet Dine is a place where taste meets elegance. Enjoy a wide range of dishes crafted by our master chefs with love and care.</p>
+        <a href="#about" class="btn">Read More</a>
+      </div>
+      <div class="welcome-images">
+        <div class="img big"><img src="food1.jpg" alt="Food 1"></div>
+        <div class="img small"><img src="food2.jpg" alt="Food 2"></div>
+        <div class="img small"><img src="food3.jpg" alt="Food 3"></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="popular-dishes">
+    <div class="container">
+      <h2 class="section-title">Our Most Popular Dishes</h2>
+      <div class="popular-grid">
+        <div class="dish-card">
+          <img src="dish1.jpg" alt="Grilled Salmon">
+          <h4>Grilled Salmon</h4>
+          <p>Fresh salmon grilled to perfection.</p>
+          <span class="price">₹450</span>
+        </div>
+        <div class="dish-card">
+          <img src="dish4.jpg" alt="Paneer Butter Masala">
+          <h4>Paneer Butter Masala</h4>
+          <p>Soft paneer cubes in creamy tomato gravy.</p>
+          <span class="price">₹350</span>
+        </div>
+        <div class="dish-card">
+          <img src="dish5.jpg" alt="Mutton Biryani">
+          <h4>Mutton Biryani</h4>
+          <p>Aromatic basmati rice with tender mutton.</p>
+          <span class="price">₹480</span>
+        </div>
+        <div class="dish-card">
+          <img src="dish3.jpg" alt="Sizzling Brownie">
+          <h4>Sizzling Brownie</h4>
+          <p>Warm brownie served with ice cream.</p>
+          <span class="price">₹200</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="menu-header">
+        <h2 class="section-title">Full Menu</h2>
+        <div class="ticker">
+          <a href="delivery.html" target="_blank" class="btn ticker-btn">Home Delivery at orders above ₹300 only!.Click to order now!</a>
+        </div>
+      </div>
+
+      <!-- FILTER BUTTONS -->
+      <div class="menu-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="Starters">Starters</button>
+        <button class="filter-btn" data-category="Main Course">Main Course</button>
+        <button class="filter-btn" data-category="Desserts">Desserts</button>
+        <button class="filter-btn" data-category="Beverages">Beverages</button>
+      </div>
+
+      
+      <div class="menu-grid">
+        <div class="menu-item" data-category="Starters">
+          <img src="starter1.jpg" alt="Bruschetta">
+          <div class="menu-details">
+            <h4>Bruschetta</h4>
+            <p>Toasted bread with tomatoes & basil.</p>
+            <span class="price">₹150</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="Starters">
+          <img src="starter2.jpg" alt="Chicken Wings">
+          <div class="menu-details">
+            <h4>Chicken Wings</h4>
+            <p>Spicy crispy wings served with dip.</p>
+            <span class="price">₹220</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="Starters">
+          <img src="dish6.jpg" alt="Chicken Salad">
+          <div class="menu-details">
+            <h4>Chicken Salad</h4>
+            <p>Fresh salad with grilled chicken slices.</p>
+            <span class="price">₹180</span>
+          </div>
+        </div>
+
+        
+        <div class="menu-item" data-category="Main Course">
+          <img src="dish5.jpg" alt="Mutton Biryani">
+          <div class="menu-details">
+            <h4>Mutton Biryani</h4>
+            <p>Aromatic basmati rice with tender mutton.</p>
+            <span class="price">₹480</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="Main Course">
+          <img src="dish2.jpg" alt="Vegetarian Pasta">
+          <div class="menu-details">
+            <h4>Vegetarian Pasta</h4>
+            <p>Pasta with fresh vegetables & cheese.</p>
+            <span class="price">₹320</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="Main Course">
+          <img src="dish1.jpg" alt="Grilled Salmon">
+          <div class="menu-details">
+            <h4>Grilled Salmon</h4>
+            <p>Fresh salmon grilled to perfection.</p>
+            <span class="price">₹450</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="Main Course">
+          <img src="dish4.jpg" alt="Paneer Butter Masala">
+          <div class="menu-details">
+            <h4>Paneer Butter Masala</h4>
+            <p>Soft paneer cubes in creamy tomato gravy.</p>
+            <span class="price">₹350</span>
+          </div>
+        </div>
+
+        
+        <div class="menu-item" data-category="Desserts">
+          <img src="dish3.jpg" alt="Sizzling Brownie">
+          <div class="menu-details">
+            <h4>Sizzling Brownie</h4>
+            <p>Warm brownie served with ice cream.</p>
+            <span class="price">₹200</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="Desserts">
+          <img src="dessert2.jpg" alt="Ice Cream Sundae">
+          <div class="menu-details">
+            <h4>Ice Cream Sundae</h4>
+            <p>Classic sundae with chocolate topping.</p>
+            <span class="price">₹180</span>
+          </div>
+        </div>
+
+        
+        <div class="menu-item" data-category="Beverages">
+          <img src="beverage1.jpg" alt="Fresh Juice">
+          <div class="menu-details">
+            <h4>Fresh Juice</h4>
+            <p>Refreshing seasonal fruit juice.</p>
+            <span class="price">₹120</span>
+          </div>
+        </div>
+        <div class="menu-item" data-category="Beverages">
+          <img src="beverage2.jpg" alt="Hot Coffee">
+          <div class="menu-details">
+            <h4>Hot Coffee</h4>
+            <p>Freshly brewed coffee with aroma.</p>
+            <span class="price">₹100</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="book-table" id="book">
+    <div class="container book-table-flex">
+      <div class="book-image">
+        <img src="restaurant.jpg" alt="Restaurant Ambiance">
+      </div>
+      <div class="book-form">
+        <h2>Book a Table</h2>
+        <p>Reserve your table and enjoy our exquisite meals in a cozy ambiance.</p>
+        <form onsubmit="return bookTable(this);">
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="email" name="email" placeholder="Email">
+          <input type="date" name="date">
+          <input type="time" name="time">
+          <input type="number" name="guests" placeholder="Number of Guests">
+          <button type="submit" class="btn">Book Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Velvet Dine combines taste and elegance, offering a wide variety of dishes crafted by expert chefs. Our mission is to create unforgettable dining experiences for every guest who walks through our doors.</p>
+      <h3>Our Founders</h3>
+      <div class="founders">
+        <div class="founder-card">
+          <img src="huzaifa.jpg" alt="Huzaifa Khan">
+          <h4>Huzaifa Khan</h4>
+          <p>Chef & Co-Founder</p>
+          <p>Passionate about creating unique culinary experiences.</p>
+        </div>
+        <div class="founder-card">
+          <img src="saad.jpg" alt="Saad Khan">
+          <h4>Saad Khan</h4>
+          <p>CEO & Co-Founder</p>
+          <p>Oversees operations and ensures quality at every level.</p>
+        </div>
+        <div class="founder-card">
+          <img src="zaeem.jpg" alt="Zaeem Siddiqui">
+          <h4>Zaeem Siddiqui</h4>
+          <p>Marketing Head</p>
+          <p>Responsible for brand and customer outreach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="contact" id="contact">
+    <div class="container contact-section">
+      <h2>Contact Us</h2>
+      <p>Send us a message and we will get back to you as soon as possible.</p>
+      <form onsubmit="return submitContact(this);">
+        <input type="text" name="cname" placeholder="Your Name">
+        <input type="email" name="cemail" placeholder="Email">
+        <textarea name="cmessage" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  
+  <footer class="footer">
+    <div class="container footer-flex">
+       <div class="footer-logo">
+        <img src="logo.png" alt="Restaurant Logo">
+      </div>
+      <p>&copy; 2025 Velvet Dine. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#book">Book Table</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-contact">
+      <p>📞 +91 98765 43210 | 📧 velvetsdine@gmail.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
